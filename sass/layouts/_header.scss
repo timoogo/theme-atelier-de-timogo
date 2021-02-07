@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+
+    max-height: max-content;
+    border-bottom: 1px solid #000;
+    & .site-description{
+        display: none;
+    }
+    & .main-navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & ul{
+            & li{
+                padding: $spacing-menu-item;
+                text-transform: capitalize;
+            }
+        }
+    }
+    & .site-branding{
+        & a{
+            color:rgb(34, 17, 94);
+            text-decoration: none;
+        }
+    }
+}
+main, aside, footer{
+    display: none;
+}
