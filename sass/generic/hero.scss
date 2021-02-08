@@ -1,0 +1,19 @@
+section.hero{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 90vh;
+    margin-bottom: 10vh;
+    border-bottom: 1px solid #000;
+    & .hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 1vh 3vw;
+
+    }
+    & img{
+        max-width: 50%;
+    }
+}

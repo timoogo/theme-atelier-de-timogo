@@ -48,7 +48,7 @@
 			<?php
 	wp_nav_menu( array( 
 	 'theme_location' => 'menu-1',
-	 'container' => 'ul' ) );
+	 'container' => 'ul'));
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

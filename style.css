@@ -48,6 +48,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+#wpadminbar > a {
+  color: #fff !important;
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -376,6 +380,27 @@ html {
   box-sizing: border-box;
 }
 
+/* Hero *
+--------------------------------------------- */
+section.hero {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 90vh;
+  margin-bottom: 10vh;
+  border-bottom: 1px solid #000;
+}
+section.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1vh 3vw;
+}
+section.hero img {
+  max-width: 50%;
+}
+
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
@@ -457,7 +482,12 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
+  font-family: "Raleway", sans-serif;
   background: #fff;
+}
+
+#wpadminbar {
+  display: none;
 }
 
 hr {
@@ -518,7 +548,7 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: #336611 !important;
 }
 a:visited {
   color: #800080;
@@ -531,6 +561,18 @@ a:focus {
 }
 a:hover, a:active {
   outline: 0;
+}
+
+a.btn-primary-outline {
+  border: 1px solid #336611;
+  padding: 5px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 1s;
+}
+a.btn-primary-outline:hover {
+  background-color: #336611;
+  color: white !important;
 }
 
 /* Forms
@@ -634,13 +676,19 @@ header .main-navigation ul li {
   padding: 1vw;
   text-transform: capitalize;
 }
-header .site-branding a {
-  color: #22115e;
-  text-decoration: none;
+header .site-branding {
+  font-size: 1rem;
 }
 
-main, aside, footer {
+aside {
   display: none;
+}
+
+article header {
+  border-bottom: 0;
+}
+article section.entry-content {
+  margin: 1vh 5vh;
 }
 
 /*--------------------------------------------------------------

@@ -1,0 +1,8 @@
+article{
+    & header{
+        border-bottom: 0;
+    }
+    & section.entry-content{
+        margin:  $spacing-article-h $spacing-article-w;
+    }
+}
